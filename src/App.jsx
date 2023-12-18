@@ -1,9 +1,10 @@
 import "./App.css";
+import Nav from "./components/NavBar";
 
 function App() {
   return (
     <>
-      <h1>Shopping Cart</h1>
+      <Nav></Nav>
     </>
   );
 }

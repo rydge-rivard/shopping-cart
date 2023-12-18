@@ -1,0 +1,18 @@
+.nav-bar {
+  background-color: #f94a4a;
+  display: flex;
+  flex-wrap: nowrap;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  gap: 24px;
+  justify-content: flex-end;
+}
+
+.nav-bar :nth-child(1) {
+  flex-basis: 100%;
+}
+
+.nav-bar li {
+  padding: 4px 8px;
+}
