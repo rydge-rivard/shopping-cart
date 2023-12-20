@@ -5,8 +5,12 @@ export default function Nav() {
   return (
     <nav>
       <ul className="nav-bar">
-        <li>Rydge&apos;s Shop</li>
-        <li>Shop</li>
+        <li>
+          <Link to="/">Rydge&apos;s Shop</Link>
+        </li>
+        <li>
+          <Link to="/">Shop</Link>
+        </li>
         <li>
           <Link to="cart">Cart</Link>
         </li>

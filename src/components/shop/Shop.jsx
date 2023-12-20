@@ -1,10 +1,10 @@
 import Nav from "../NavBar";
 
-export default function Cart() {
+export default function Shop() {
   return (
     <div className="cart">
       <Nav></Nav>
-      <div>CART</div>
+      <div>SHOP</div>
     </div>
   );
 }
