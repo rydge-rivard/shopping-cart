@@ -1,5 +1,5 @@
 .nav-bar {
-  background-color: #f94a4a;
+  background-color: black;
   display: flex;
   flex-wrap: nowrap;
   color: white;
@@ -7,6 +7,7 @@
   padding: 12px 24px;
   gap: 24px;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .nav-bar :nth-child(1) {

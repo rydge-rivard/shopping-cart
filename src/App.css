@@ -7,3 +7,18 @@
   box-sizing: border-box;
   font-family: "Inter";
 }
+
+a:link,
+a:visited {
+  padding: 4px 12px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+}
+
+a:hover,
+a:active {
+  background-color: #6e4af0;
+}
