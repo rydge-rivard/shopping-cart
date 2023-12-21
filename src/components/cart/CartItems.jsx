@@ -7,7 +7,11 @@ export default function CartItems({ cart, setCart }) {
       <p>{item.product.title}</p>
       <div className="qty-wrapper total-wrapper">
         <p className="price">${item.product.price * item.qty}</p>
-        <form action="" onSubmit={(e) => deleteItem(e, item)}>
+        <form
+          className="delete-form"
+          action=""
+          onSubmit={(e) => deleteItem(e, item)}
+        >
           <fieldset>
             <label htmlFor="qty"></label>
             <input

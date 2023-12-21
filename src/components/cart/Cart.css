@@ -32,6 +32,10 @@ div.cart ul:nth-child(2) li p {
   align-items: center;
 }
 
+.delete-from {
+  padding: 6px 0 0 0;
+}
+
 @media (max-width: 600px) {
   div.cart ul:nth-child(2) li {
     justify-content: center;
