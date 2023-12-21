@@ -47,3 +47,20 @@
 .price {
   font-weight: 600;
 }
+
+.qty-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.qty-wrapper button {
+  width: 24px;
+  height: 24px;
+  padding: 4px 6px;
+  background-color: #b5b5b5;
+  border: none;
+}
+
+.qty-wrapper button:hover {
+  cursor: pointer;
+}

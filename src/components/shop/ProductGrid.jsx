@@ -9,6 +9,11 @@ export default function ProductGrid({ productList }) {
       <img src={product.image} />
       <p>{product.title}</p>
       <p className="price">${product.price}</p>
+      <div className="qty-wrapper">
+        <button>-</button>
+        <p>1</p>
+        <button>+</button>
+      </div>
       <button className="add-btn">ADD TO CART</button>
     </li>
   ));
