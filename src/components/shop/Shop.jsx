@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import Nav from "../NavBar";
 import ProductGrid from "./ProductGrid";
+import PropTypes from "prop-types";
 
-export default function Shop() {
+export default function Shop({ cart, setCart }) {
   const [productList, setProductList] = useState([]);
 
   async function getProducts() {
@@ -23,8 +24,13 @@ export default function Shop() {
     <div className="cart">
       <Nav></Nav>
       <div className="product-grid">
-        <ProductGrid productList={productList} />
+        <ProductGrid productList={productList} cart={cart} setCart={setCart} />
       </div>
     </div>
   );
 }
+
+Shop.propTypes = {
+  cart: PropTypes.array.isRequired,
+  setCart: PropTypes.func.isRequired,
+};
