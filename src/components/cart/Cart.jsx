@@ -2,6 +2,7 @@ import Nav from "../NavBar";
 import PropTypes from "prop-types";
 import "./Cart.css";
 import CartItems from "./CartItems";
+import CartTotal from "./CartTotal";
 
 export default function Cart({ cart, setCart }) {
   return (
@@ -11,6 +12,7 @@ export default function Cart({ cart, setCart }) {
       <ul>
         <CartItems cart={cart} setCart={setCart} />
       </ul>
+      <CartTotal cart={cart} />
     </div>
   );
 }

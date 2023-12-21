@@ -18,7 +18,7 @@ div.cart ul:nth-child(2) {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 48px 24px;
+  padding: 48px 24px 24px 24px;
 }
 
 div.cart ul:nth-child(2) li p {
