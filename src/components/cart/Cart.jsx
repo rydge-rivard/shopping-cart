@@ -4,8 +4,6 @@ import "./Cart.css";
 import CartItems from "./CartItems";
 
 export default function Cart({ cart, setCart }) {
-  console.log(cart);
-
   return (
     <div className="cart">
       <Nav></Nav>

@@ -10,7 +10,13 @@ export default function CartItems({ cart, setCart }) {
         <form action="" onSubmit={(e) => deleteItem(e, item)}>
           <fieldset>
             <label htmlFor="qty"></label>
-            <input type="number" id="qty" min="0" defaultValue={item.qty} />
+            <input
+              type="number"
+              id="qty"
+              min="0"
+              defaultValue={item.qty}
+              onChange={(e) => updateQty(e, item)}
+            />
           </fieldset>
           <button className="add-btn">DELETE</button>
         </form>
@@ -21,6 +27,21 @@ export default function CartItems({ cart, setCart }) {
   function deleteItem(e, item) {
     e.preventDefault();
     setCart(cart.filter((a) => a.product.id !== item.product.id));
+  }
+
+  function updateQty(e, i) {
+    setCart(
+      cart.map((item) => {
+        if (item.product.id === i.product.id) {
+          return {
+            ...item,
+            qty: e.target.value,
+          };
+        } else {
+          return item;
+        }
+      })
+    );
   }
 
   return <>{cartItems}</>;
