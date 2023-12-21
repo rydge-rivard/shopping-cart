@@ -7,7 +7,7 @@ import CartTotal from "./CartTotal";
 export default function Cart({ cart, setCart }) {
   return (
     <div className="cart">
-      <Nav></Nav>
+      <Nav cartCount={cart.length}></Nav>
       {cart.length <= 0 && <h1 className="empty-cart">Your cart is empty.</h1>}
       <ul>
         <CartItems cart={cart} setCart={setCart} />

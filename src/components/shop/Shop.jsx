@@ -22,7 +22,7 @@ export default function Shop({ cart, setCart }) {
 
   return (
     <div className="cart">
-      <Nav></Nav>
+      <Nav cartCount={cart.length}></Nav>
       <div className="product-grid">
         <ProductGrid productList={productList} cart={cart} setCart={setCart} />
       </div>
