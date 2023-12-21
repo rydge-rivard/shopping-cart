@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "./ProductGrid.css";
 
 export default function ProductGrid({ productList }) {
   console.log(productList);
@@ -7,8 +8,8 @@ export default function ProductGrid({ productList }) {
     <li key={product.id}>
       <img src={product.image} />
       <p>{product.title}</p>
-      <p>${product.price}</p>
-      <button>ADD TO CART</button>
+      <p className="price">${product.price}</p>
+      <button className="add-btn">ADD TO CART</button>
     </li>
   ));
 
