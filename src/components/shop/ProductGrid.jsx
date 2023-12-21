@@ -10,11 +10,14 @@ export default function ProductGrid({ productList }) {
       <p>{product.title}</p>
       <p className="price">${product.price}</p>
       <div className="qty-wrapper">
-        <button>-</button>
-        <p>1</p>
-        <button>+</button>
+        <form action="">
+          <fieldset>
+            <label htmlFor="qty"></label>
+            <input type="number" id="qty" defaultValue={1} />
+          </fieldset>
+          <button className="add-btn">ADD TO CART</button>
+        </form>
       </div>
-      <button className="add-btn">ADD TO CART</button>
     </li>
   ));
 

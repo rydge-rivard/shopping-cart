@@ -48,19 +48,22 @@
   font-weight: 600;
 }
 
-.qty-wrapper {
-  display: flex;
-  gap: 8px;
-}
-
-.qty-wrapper button {
-  width: 24px;
-  height: 24px;
-  padding: 4px 6px;
-  background-color: #b5b5b5;
+.qty-wrapper form input,
+.qty-wrapper form fieldset {
   border: none;
 }
 
-.qty-wrapper button:hover {
-  cursor: pointer;
+.qty-wrapper form input {
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  padding: 4px 8px;
+  width: 50px;
+  height: 32px;
+}
+
+.qty-wrapper form {
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
