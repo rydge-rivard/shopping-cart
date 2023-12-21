@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 export default function Products({ productList, cart, setCart }) {
   const products = productList.map((product) => (
-    <li key={product.id}>
+    <li key={product.id} id={product.id}>
       <img src={product.image} />
       <p>{product.title}</p>
       <p className="price">${product.price}</p>
@@ -20,8 +20,8 @@ export default function Products({ productList, cart, setCart }) {
 
   function addToCart(e, product) {
     e.preventDefault();
-    const input = document.querySelector("input");
-    console.log(input.value);
+    const li = document.getElementById(`${product.id}`);
+    const input = li.querySelector("input");
     setCart([...cart, { product, qty: input.value }]);
   }
 
