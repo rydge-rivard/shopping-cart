@@ -1,0 +1,36 @@
+div.cart ul:nth-child(2) li img {
+  width: 50px;
+  flex-basis: 100%;
+  flex: 0;
+}
+
+div.cart ul:nth-child(2) li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  background-color: #efefef;
+  padding: 24px;
+}
+
+div.cart ul:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 48px 24px;
+}
+
+div.cart ul:nth-child(2) li p {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  div.cart ul:nth-child(2) li {
+    justify-content: center;
+    gap: 32px;
+  }
+  div.cart ul:nth-child(2) li p {
+    flex-basis: 100%;
+  }
+}
