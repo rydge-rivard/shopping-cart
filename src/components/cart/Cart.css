@@ -25,6 +25,13 @@ div.cart ul:nth-child(2) li p {
   text-align: center;
 }
 
+.empty-cart {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 600px) {
   div.cart ul:nth-child(2) li {
     justify-content: center;

@@ -9,6 +9,7 @@ export default function Cart({ cart, setCart }) {
   return (
     <div className="cart">
       <Nav></Nav>
+      {cart.length <= 0 && <h1 className="empty-cart">Your cart is empty.</h1>}
       <ul>
         <CartItems cart={cart} setCart={setCart} />
       </ul>
