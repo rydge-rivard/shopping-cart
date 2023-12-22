@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Nav from "../NavBar";
+import Nav from "../utils/NavBar";
 import ProductGrid from "./ProductGrid";
 import PropTypes from "prop-types";
 

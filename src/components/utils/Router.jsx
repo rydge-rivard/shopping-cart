@@ -1,7 +1,7 @@
-import App from "../App.jsx";
+import App from "../../App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Cart from "../components/cart/Cart.jsx";
-import ErrorPage from "../components/ErrorPage.jsx";
+import Cart from "../cart/Cart.jsx";
+import ErrorPage from "../utils/ErrorPage.jsx";
 import { useState } from "react";
 
 const Router = () => {

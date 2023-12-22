@@ -1,4 +1,4 @@
-import Nav from "../NavBar";
+import Nav from "../utils/NavBar";
 import PropTypes from "prop-types";
 import "./Cart.css";
 import CartItems from "./CartItems";
