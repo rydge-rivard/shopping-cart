@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Cart from "../cart/Cart.jsx";
 import ErrorPage from "../utils/ErrorPage.jsx";
 import { useState } from "react";
+import Nav from "./NavBar.jsx";
 
 const Router = () => {
   const [cart, setCart] = useState([]);
@@ -20,7 +21,11 @@ const Router = () => {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <RouterProvider router={router}>
+      <Nav />
+    </RouterProvider>
+  );
 };
 
 export default Router;

@@ -10,7 +10,7 @@ export default function Products({ productList, cart, setCart }) {
         <form action="" onSubmit={(e) => addToCart(e, product)}>
           <fieldset>
             <label htmlFor="qty"></label>
-            <input type="number" id="qty" min="0" defaultValue={1} />
+            <input type="number" id="qty" min="0" defaultValue={1} name="qty" />
           </fieldset>
           <button className="add-btn">ADD TO CART</button>
         </form>
@@ -20,9 +20,9 @@ export default function Products({ productList, cart, setCart }) {
 
   function addToCart(e, product) {
     e.preventDefault();
-    const li = document.getElementById(`${product.id}`);
-    const input = li.querySelector("input");
-    setCart([...cart, { product, qty: input.value }]);
+    const formData = new FormData(e.target);
+    const formJson = Object.fromEntries(formData.entries());
+    setCart([...cart, { product, qty: formJson.qty }]);
   }
 
   return <>{products}</>;
